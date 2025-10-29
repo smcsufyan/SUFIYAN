@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sufiyan Kizisseri | Music Director, Producer, Sarigama CEO</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/images/SMC.PNG" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        /* EPK Specific Styles: Overriding/Extending Main Theme */
+        
+        /* New Color Accent for Personal Site */
+        :root {
+            --color-sufiyan-accent: #FFD700; /* Gold Accent */
+            --color-sufiyan-secondary: #00FFFF; /* Cyan for buttons */
+        }
+
+        /* 1. HERO/INTRO SECTION */
+        .sufiyan-hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(rgba(10, 10, 31, 0.9), rgba(10, 10, 31, 0.8)), url('assets/images/sufiyan-bg.jpg') no-repeat center center/cover;
+            position: relative;
+        }
+
+        .sufiyan-avatar {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 4px solid var(--color-sufiyan-accent); /* Gold Ring */
+            margin: 0 auto 20px;
+            background-image: url('assets/images/team-1.jpg'); /* Sufiyan's Photo */
+            background-size: cover;
+            background-position: center;
+            box-shadow: 0 0 15px var(--color-sufiyan-accent);
+        }
+
+        .sufiyan-hero h1 {
+            font-size: 4.5rem;
+            color: var(--color-text-light);
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
+        }
+
+        .sufiyan-hero p {
+            font-size: 1.5rem;
+            color: var(--color-sufiyan-secondary);
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+
+        .hero-buttons a {
+            margin: 0 10px;
+        }
+        
+        /* 2. ABOUT/BIO SECTION */
+        .bio-section {
+            background-color: var(--color-medium-dark);
+            text-align: center;
+        }
+
+        .bio-section p {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        /* 3. FEATURED WORK/VIDEO */
+        .work-section {
+            background-color: var(--color-dark-base);
+        }
+        
+        .video-container {
+            max-width: 900px;
+            margin: 0 auto 40px;
+            aspect-ratio: 16 / 9;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+        }
+        
+        .work-list {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .work-item {
+            padding: 15px 30px;
+            border: 1px solid var(--color-sufiyan-accent);
+            border-radius: 50px;
+            color: var(--color-sufiyan-accent);
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .work-item:hover {
+            background: var(--color-sufiyan-accent);
+            color: var(--color-dark-base);
+            box-shadow: 0 0 10px var(--color-sufiyan-accent);
+        }
+
+        /* 4. CONTACT SECTION */
+        .epk-contact {
+            background: linear-gradient(145deg, #171738 0%, var(--color-dark-base) 100%);
+        }
+        
+        .epk-contact-details {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .epk-contact-details p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .epk-social-icons a i {
+            font-size: 2.5rem;
+            margin: 0 15px;
+            color: var(--color-sufiyan-secondary);
+            transition: color 0.3s, text-shadow 0.3s;
+        }
+        
+        .epk-social-icons a:hover i {
+            color: var(--color-sufiyan-accent);
+            text-shadow: 0 0 10px var(--color-sufiyan-accent);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .sufiyan-hero h1 { font-size: 3.5rem; }
+            .sufiyan-hero p { font-size: 1.2rem; }
+            .work-list { flex-direction: column; align-items: center; }
+            .epk-contact-details { text-align: center; padding: 0 20px; }
+            .epk-social-icons { margin-top: 30px; }
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header" style="background: rgba(18, 26, 51, 0.8);">
+        <nav class="nav-menu">
+            <a href="index.html" class="cta-button secondary-cta" style="margin-left:0; border-color: var(--color-sufiyan-accent); color: var(--color-sufiyan-accent);">
+                ← Back to Sarigama Music Corner
+            </a>
+        </nav>
+    </header>
+
+    <section id="hero" class="sufiyan-hero">
+        <div class="container">
+            <div class="sufiyan-avatar"></div>
+            <h1 data-aos="fade-up">MUHAMMAD SUFIYAN KIZISSERI</h1>
+            <p data-aos="fade-up" data-aos-delay="100">Music Producer & CEO at Sarigama Music Corner</p>
+            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="200">
+                <a href="#work" class="cta-button primary-cta" style="background: var(--color-sufiyan-accent); color: var(--color-dark-base);">
+                    Featured Work 🎬
+                </a>
+                <a href="#contact" class="cta-button secondary-cta" style="border-color: var(--color-sufiyan-secondary); color: var(--color-sufiyan-secondary);">
+                    Get in Touch ✉️
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="bio-section section-padding">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-right" style="color: var(--color-sufiyan-accent);">The Vision</h2>
+            <p data-aos="fade-up">
+                Muhammad Sufiyan is a dynamic music producer and director known for his innovative approach to blending traditional South Indian melodies with contemporary global production standards. As the founder of Sarigama Music Corner, he spearheads the studio’s vision to cultivate a new era of Malayalam music—one that is technically polished, emotionally resonant, and internationally competitive.
+            </p>
+        </div>
+    </section>
+
+    <section id="work" class="work-section section-padding">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-down" style="color: var(--color-sufiyan-secondary);">Featured Production</h2>
+            
+            <div class="video-container" data-aos="zoom-in">
+                <iframe src="http://googleusercontent.com/youtube-video-id" title="Sufiyan Kizisseri Featured Work" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class="work-list" data-aos="fade-up" data-aos-delay="100">
+                <a href="#" class="work-item">Music: Thalassery Vibe</a>
+                <a href="#" class="work-item">Score: Ennam (Climax Score)</a>
+                <a href="#" class="work-item">Production: Salman Kizhissseri EP</a>
+                <a href="#" class="work-item">Live Mix: Kerala Fusion Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="epk-contact section-padding">
+        <div class="container epk-contact-details">
+            <h2 class="section-title" data-aos="fade-down" style="color: var(--color-sufiyan-accent);">Contact & EPK</h2>
+            <p data-aos="fade-up">
+                For project inquiries, collaboration, or press, please reach out directly.
+            </p>
+            <p data-aos="fade-up" style="color: var(--color-sufiyan-secondary);">
+                **Production Email:** smcsufyan@gmail.com
+            </p>
+            
+            <a href="assets/epk/Sufiyan_Kizisseri_EPK.pdf" class="cta-button primary-cta" style="background: var(--color-sufiyan-secondary); color: var(--color-dark-base); margin-bottom: 40px;">
+                Download EPK (Press Kit)
+            </a>
+            
+            <div class="epk-social-icons" data-aos="fade-up" data-aos-delay="100">
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-spotify"></i></a>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="main-footer" style="background: var(--color-dark-base); border-top: 1px solid #171738;">
+        <p style="color: rgba(255, 255, 255, 0.4);">© 2025 Muhammad Sufiyan Kizisseri. Hosted by Sarigama Music Corner.</p>
+    </footer>
+
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/6901741225896a19502d7096/1j8mqqq78';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+    </script>
+</body>
+</html>
