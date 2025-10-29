@@ -3,77 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sufiyan Kizisseri | Music Producer & Director</title>
-    <link rel="stylesheet" href="sufiyan-style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="icon" href="assets/images/SMC.PNG" type="image/png">
+    <title>Sarigama News Hub | Studio Vibe & Updates</title>
+    <link rel="stylesheet" href="assets/css/style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/images/smc.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <style>
+        /* Blog Specific Styles for better layout */
+        .blog-header {
+            padding: 100px 0 40px;
+            background-color: var(--color-dark-base);
+            text-align: center;
+        }
+
+        .blog-header h1 {
+            font-size: 4rem;
+            color: var(--color-primary-accent);
+            text-shadow: 0 0 10px rgba(0, 255, 255, 0.4);
+            margin-bottom: 10px;
+        }
+        
+        .blog-section {
+            padding: 40px 0 80px;
+            background-color: var(--color-medium-dark);
+        }
+
+        .post-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+        }
+
+        .post-card {
+            background: var(--color-dark-base);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: block; 
+        }
+
+        .post-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6), 0 0 12px var(--color-primary-accent);
+        }
+
+        .post-thumbnail {
+            width: 100%;
+            height: 200px;
+            background-color: #333;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        .post-content {
+            padding: 25px;
+        }
+
+        .post-meta {
+            font-size: 0.9rem;
+            color: var(--color-primary-accent);
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .post-meta span {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .post-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--color-text-light);
+        }
+        
+        @media (max-width: 768px) {
+            .blog-header h1 {
+                font-size: 3rem;
+            }
+            .post-grid {
+                gap: 20px;
+                padding: 0 10px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <section id="hero" class="sufiyan-hero">
+    <header class="main-header">
+        <div class="logo">
+            <img src="assets/images/smc.png" alt="Sarigama Music Corner Logo" class="glowing-logo">
+            <span>SARIGAMA</span>
+        </div>
+        <nav class="nav-menu">
+            <a href="https://sarigamamusiccorner.in">Home</a>
+            <a href="releases.html">Releases</a>
+            <a href="artists.html">Artists</a>
+            <a href="index.html" class="active">News Hub</a>
+            <a href="https://sarigamamusiccorner.in/#contact" class="nav-contact-btn">Contact Us</a>
+        </nav>
+    </header>
+
+    <section class="blog-header">
         <div class="container">
-            <div class="back-link">
-                <a href="https://sarigamamusiccorner.in" class="label-link">← BACK TO SARIGAMA MUSIC CORNER</a>
-            </div>
-            
-            <div class="hero-content">
-                <div class="sufiyan-avatar"></div>
-                
-                <h1 class="main-title">MUHAMMAD SUFIYAN</h1>
-                <p class="role-tag">MUSIC PRODUCER | DIRECTOR | CEO</p>
-
-                <div class="social-icons">
-                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-spotify"></i></a>
-                </div>
-
-                <div class="cta-links">
-                    <a href="#work" class="cta-button primary-cta">VIEW FEATURED WORK</a>
-                    <a href="#contact" class="cta-button secondary-cta">CONTACT FOR PROJECTS</a>
-                </div>
-            </div>
+            <h1 class="glowing-text" data-aos="fade-down">SARIGAMA NEWS HUB</h1>
+            <p data-aos="fade-up" style="font-size:1.1rem; color: rgba(255, 255, 255, 0.7);">Behind the scenes, production tips, and latest announcements.</p>
         </div>
     </section>
 
-    <section id="work" class="section work-section">
+    <section class="blog-section">
         <div class="container">
-            <h2 class="section-heading">MY PHILOSOPHY & WORK</h2>
-            
-            <div class="content-grid">
-                <div class="text-block">
-                    <h3>BRIDGING CULTURES, DEFINING SOUND.</h3>
-                    <p>My journey is rooted in Kerala's rich musical tradition, fused with the sharp, dynamic requirements of global film and contemporary music production. I focus on delivering compositions that are technically flawless and deeply moving. Every project is an opportunity to craft a signature sonic identity.</p>
-                    <a href="#" class="inline-link">READ FULL BIO →</a>
-                </div>
-                <div class="video-block">
-                    <div class="video-wrapper">
-                        <iframe src="http://googleusercontent.com/youtube-video-id" allowfullscreen></iframe>
+            <div class="post-grid">
+                
+                <a href="blog-post-1.html" class="post-card" data-aos="fade-up">
+                    <div class="post-thumbnail" style="background-image: url('assets/images/news-1.jpg');">
+                        [NEW RELEASE]
                     </div>
-                    <p class="video-caption">Featured: Cinematic Score for 'Ennam'</p>
-                </div>
-            </div>
-        </div>
-    </section>
+                    <div class="post-content">
+                        <p class="post-meta"><i class="fas fa-calendar-alt"></i> Oct 28, 2025 | <span>Release</span></p>
+                        <h3>Salman Kizhissseri's New Single 'Thalassery Vibe' Launched!</h3>
+                        <p>Our latest production is a blend of traditional Mappilappattu and modern electronic sounds...</p>
+                    </div>
+                </a>
 
-    <section id="contact" class="section contact-section">
-        <div class="container contact-container">
-            <h2 class="section-heading">GET IN TOUCH</h2>
-            
-            <div class="contact-details">
-                <p>For bookings, media inquiries, or serious project collaborations, contact my office directly:</p>
-                <p class="detail-line"><i class="fas fa-envelope"></i> smcsufyan@gmail.com</p>
-                <p class="detail-line"><i class="fas fa-phone"></i> +91 9961 569 470</p>
+                <a href="blog-post-2.html" class="post-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="post-thumbnail" style="background-image: url('assets/images/news-2.jpg');">
+                        [TUTORIAL]
+                    </div>
+                    <div class="post-content">
+                        <p class="post-meta"><i class="fas fa-calendar-alt"></i> Oct 25, 2025 | <span>Tutorial</span></p>
+                        <h3>5 Expert EQ Tips for Indian Classical Instruments</h3>
+                        <p>Learn how to perfectly mix the tonality of a Veena or a Tabla in a modern track.</p>
+                    </div>
+                </a>
+
+                <a href="blog-post-3.html" class="post-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="post-thumbnail" style="background-image: url('assets/images/news-3.jpg');">
+                        [BEHIND SCENES]
+                    </div>
+                    <div class="post-content">
+                        <p class="post-meta"><i class="fas fa-calendar-alt"></i> Oct 20, 2025 | <span>Studio Life</span></p>
+                        <h3>Creating the Cinematic Score for 'Ennam' - BTS</h3>
+                        <p>Rafi Poovattuparamba breaks down the making of the dramatic climax music...</p>
+                    </div>
+                </a>
                 
-                <a href="mailto:smcsufyan@gmail.com" class="cta-button primary-cta download-btn">EMAIL ME DIRECTLY</a>
-            </div>
+                </div>
         </div>
     </section>
 
     <footer class="main-footer">
-        <p>&copy; 2025 Muhammad Sufiyan Kizisseri. All Rights Reserved.</p>
+        <div class="footer-container">
+            <p>© 2025 Sarigama Music Corner. All Rights Reserved.</p>
+            <div class="social-links">
+                <span>Follow us:</span>
+                <a href="https://www.instagram.com/sarigamamusiccorner" target="_blank" class="glowing-link social-icon-gold"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/SarigamaMusic" target="_blank" class="glowing-link social-icon-teal"><i class="fab fa-youtube"></i></a>
+                <a href="https://open.spotify.com/artist/SarigamaMusicID" target="_blank" class="glowing-link social-icon-teal"><i class="fab fa-spotify"></i></a>
+                <a href="https://www.linkedin.com/company/sarigamamusic" target="_blank" class="glowing-link social-icon-gold"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="footer-note">
+             <p>A Cinematic & Premium Experience</p>
+        </div>
     </footer>
+
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/6901741225896a19502d7096/1j8mqqq78';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
     
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+    </script>
 </body>
 </html>
